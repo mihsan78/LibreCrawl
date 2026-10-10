@@ -14,7 +14,7 @@ services:
       - PYTHONUNBUFFERED=1
       # Set to "true" for local mode (no authentication), "false" for production
       # Defaults to "false" — local mode disables all auth and grants admin to everyone
-      - LOCAL_MODE=${LOCAL_MODE:-false}
+      - LOCAL_MODE=${LOCAL_MODE:-true}
       # Set to "true" to disable new user registrations
       - REGISTRATION_DISABLED=${REGISTRATION_DISABLED:-false}
       # Set to "true" for demo mode (1.5GB per-user memory limit)
